@@ -1,0 +1,30 @@
+let text = document.getElementById('text');
+let leaf = document.getElementById('leaf');
+let hill1 = document.getElementById('hill1');
+let hill4 = document.getElementById('hill4');
+let hill5 = document.getElementById('hill5');
+
+// window.addEventListener('scroll', () => {
+//     let value = window.scrollY;
+
+//     // batasi biar gak liar
+//     let limit = Math.min(value, 500);
+//     text.style.transform = `translateY(${limit * 2.5}px)`;
+//     leaf.style.transform = `translate(${limit * 1.5}px, ${limit * -1.5}px)`;
+//     hill5.style.transform = `translateX(${limit * 1.5}px)`;
+//     hill4.style.transform = `translateX(${limit * -1.5}px)`;
+//     hill1.style.transform = `translateY(${limit * 1}px)`;
+// });
+
+window.addEventListener('scroll', () => {
+    let value = window.scrollY;
+    let limit = Math.min(value, 500);
+
+    requestAnimationFrame(() => {
+        text.style.transform = `translateY(${limit * 2.5}px)`;
+        leaf.style.transform = `translate(${limit * 1.5}px, ${limit * -1.5}px)`;
+        hill5.style.transform = `translateX(${limit * 1.5}px)`;
+        hill4.style.transform = `translateX(${limit * -1.5}px)`;
+        hill1.style.transform = `translateY(${limit * 1}px)`;
+    });
+});
