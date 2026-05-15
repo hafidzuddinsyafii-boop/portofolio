@@ -32,7 +32,7 @@ header {
     font-size: 2em;
     font-weight: 60000;
     pointer-events: none;
-    margin-right: 270px;
+    margin-right: 525px;
 }
 
 .navigation a {
@@ -47,8 +47,7 @@ header {
     color: #fff;
 }
 
-.navigation a:hover,
-.navigation a:active {
+.navigation a:hover {
     /* border: #359381 2px solid; */
     background: #00ffd0;
     color: #000000;
@@ -98,17 +97,7 @@ header {
     font-weight: 300;
 }
 
-/* #education p a {
-    color: #00bcd4;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-#education p a:hover {
-    color: #fff;
-    text-decoration: underline;
-} */
-
+/* link web sekolah */
 #education p a {
     color: #00e6a8;
     text-decoration: none;
@@ -132,9 +121,9 @@ header {
 
 /* Container Utama Footer */
 .contact-footer {
-    background: #1b1919; /* Warna gelap seperti contoh Bootstrap */
+    background: #1b1919; 
     padding: 80px 10% 40px 10%;
-    text-align: left; /* Bootstrap style biasanya rata kiri */
+    text-align: left; 
     border-top: 1px solid rgb(157, 143, 143);
 }
 
@@ -182,6 +171,16 @@ header {
     padding-left: 5px;
 }
 
+.footer-col a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-col a:hover {
+    color: #00e6a8;
+    padding-left: 5px;
+}
 /* Bagian Kontak Utama di Kolom Besar */
 .main-contacts {
     margin-top: 25px;
